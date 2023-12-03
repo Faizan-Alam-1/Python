@@ -1,57 +1,37 @@
+print("Thank you for chosing python pizza Deliveries\n")
+bill = 0
+Question = "Enter size of Pizza L , M  ,S\n"
+size = input(Question)                   # small pizza $15 , Medium pizza $ 20 , Large Pizza $25 
+add_pepperoni = input("Do you want peopperoni ? Y : N :  ")      # +$3
+extra_cheese =  input("Do you want extra cheese? Y : N : ")      # $1
 
-# My_list = [ 2 , "rrrr" , 'd' , 6.8]
-        #  0     1        2     3
+"lowercase -- a , b ,c, d   ----  uppercase ---- A , B, C "  
 
+if size.upper() == 'L':
+    bill = bill+25
 
+    if add_pepperoni.upper() == 'Y':
+         bill = bill+3
+    if extra_cheese.upper() =='Y':
+        bill  = bill+1
+   
 
+if size.upper() == 'M':
+    bill = bill+20
 
-
-
-
-
-# nums = [ 2, 5,6,8,9]
-
-# # loop 
-
-# sum  = 0
-# for item in nums :
-#     sum += item 
-
-# print(sum)    
-
-
-
-# tuple  
-
-
-# my_tuple = ("ram" , 33, 7.8)
-# my_tuple[0] = "Faizan"
-# print(my_tuple)
-
-    
-
-# indexing 
+    if add_pepperoni.upper() == 'Y':
+         bill = bill+3
+    if extra_cheese.upper() =='Y':
+        bill  = bill+1
 
 
-# myList = [3,5,6,7,8,9,10,12,36,67] 
+if size.upper() == 'S':
+    bill = bill+15
+
+    if add_pepperoni.upper() == 'Y':
+         bill = bill+3
+    if extra_cheese.upper() =='Y':
+        bill  = bill+1
 
 
-
-# print(myList[2::3]) # 6,9,36
-
-
-
-
-
-# range(1 , 100)
-
-
-# for i in  range(1,101):
-#     print(i)
-
-# appen()
-
-
-mylist = [2,4,5,7]
-mylist.append(100)
-print(mylist)
+print(f"{bill}$"  )
